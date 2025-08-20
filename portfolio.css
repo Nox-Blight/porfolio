@@ -1,0 +1,75 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+.main-container {
+    display: flex;
+    background-color: #1a1a1a;
+    color: white;
+    min-height: 100vh;
+    width: 100%;
+}
+
+/* ----------- Sidebar Vertical "PORTFOLIO" ----------- */
+.sidebar {
+    background-color: #1a1a1a;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: 2.5em;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* ----------- Main Content (Gallery + Infos) ----------- */
+.content {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* ----------- Image Gallery ----------- */
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.image-box {
+    width: 160px;
+    height: 160px;
+    background-color: #cbe7f7;
+    border: 2px solid white;
+    background-size: cover;
+    background-position: center;
+}
+
+/* ----------- Info Section ----------- */
+.info-section {
+    display: flex;
+    justify-content: space-between;
+    border-top: 3px solid white;
+    padding-top: 15px;
+}
+
+.info-box {
+    flex: 1;
+    padding: 0 20px;
+    font-size: 16px;
+}
+
+.info-box:not(:last-child) {
+    border-right: 3px solid white;
+}
