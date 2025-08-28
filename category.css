@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+}
+
+.main-container {
+    display: flex;
+    background-color: #1a1a1a;
+    color: white;
+    min-height: 100vh;
+    width: 100%;
+}
+
+
+
+
+
+
+/* --- Effet hover sur images --- */
+.image-box {
+  width: 250px;
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  border: 2px solid white;
+  transition: transform 0.3s ease;
+}
+.image-box:hover {
+  transform: scale(1.1);
+}
+
+/* --- Bouton retour --- */
+.back-btn {
+  margin: 20px;
+}
+.back-btn a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #FFF;
+  background: #1a1a1a;
+  padding: 8px 15px;
+  border-radius: 8px;
+}
+.back-btn a:hover {
+  background: #333;
+}
+
+/* --- Grille de catégorie --- */
+.titre {
+color: white
+}
+
+.gallery-category {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+.gallery-category .image-box {
+  height: 350px;
+}
+/*---Image Micca---*/
+.image-Micca{
+	width: 250px;
+  height: 350px;
+  background-size: cover;
+  background-position: left;
+  border: 2px solid white;
+  transition: transform 0.3s ease;
+}
+.image-Micca:hover {
+  transform: scale(1.1);
+}
+
